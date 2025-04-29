@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Sriracha", cursive;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    font-family: var(--fonte1);
+    min-height: 100%;
+    background-color: rgb(209, 207, 207);
+}
+
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1 {
+    font-family: var(--fonte2);
+    font-size: 4em;
+    /*font-size: 10vw; A fonte aumenta conforme o tamanho da tela */ 
+    padding-top: 50px;
+    /*text-transform: uppercase; DEIXAR TODAS AS LETRAS MAIUSCULAS*/
+    font-variant: small-caps; /* Aqui só as primeiras letras fica maiusculas*/
+}
+header > p {
+    padding-bottom: 50px;
+}
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+
+section{
+    font-family: var(--fonte3);
+    font-size: 1.5em;
+    padding-top: 10vh;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    line-height: 2em; /* afastamento entre as linhas*/
+}
+section > p {
+    padding-bottom: 1em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.342);
+    background-size: cover; /*para fazer com que a imagem de fundo preencha completamente o elemento*/
+    background-attachment: fixed; /* imagem de fundo de um elemento permaneça fixa na tela enquanto o usuário rola a página. */ 
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.329);
+    text-shadow: 2px 2px 2px black;
+    
+}
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+}
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: center center;
+    
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
